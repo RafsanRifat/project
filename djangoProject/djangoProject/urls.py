@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^profiles/', include("tamilmatrimony.urls", namespace= "profiles")),
+    url('', include("tamilmatrimony.urls", namespace= "profiles")),
     url(r'^register/', "tamilmatrimony.views.register", name="register"),
     url(r'^login/',"tamilmatrimony.views.login_user",name= "login"),
     url(r'^logout/',"tamilmatrimony.views.logout_view",name= "logout"),
